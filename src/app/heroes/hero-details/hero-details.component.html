@@ -1,0 +1,11 @@
+<h2 class="mb-3">Hero: <span class="text-primary">{{hero?.name}}</span></h2>
+<hr>
+<dl class="row mb-4">
+  <dt class="col-md-2">Id</dt>
+  <dd class="col-md-10">{{hero?.id}}</dd>
+  <dt class="col-md-2">Name</dt>
+  <dd class="col-md-10">{{hero?.name}}</dd>
+</dl>
+
+<button class="btn btn-secondary" [routerLink]="['/heroes']">Back</button>
+<button class="btn btn-primary ms-2" [routerLink]="['/edit-hero', hero?.id]">Edit</button>

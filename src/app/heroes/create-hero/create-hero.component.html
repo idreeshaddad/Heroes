@@ -1,0 +1,10 @@
+<h2 class="mb-3">Create Hero</h2>
+<hr>
+<form [formGroup]="createHeroForm" (ngSubmit)="createHero()">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="heroName" formControlName="name" placeholder="hero">
+    <label for="heroName">Hero Name</label>
+  </div>
+  <a class="btn btn-secondary me-3" routerLink="/heroes">Cancel</a>
+  <button type="submit" class="btn btn-primary">Create</button>
+</form>
